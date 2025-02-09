@@ -1,4 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'GenshinDrip';
+  font-style: normal;
+  font-weight: normal;
+  src: local('GenshinDrip'), url('./assets/fonts/GenshinDrip.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'HYWenHei 85W';
+  font-style: normal;
+  font-weight: normal;
+  src: local('HYWenHei 85W'), url('./assets/fonts/zhcn.woff') format('woff');
+}
+
+
+
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+:root {
+  --healthbar-width: 100%;
+  --HywenHei: 'HywenHei';
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
 body {
+  font-family: "GenshinDrip" "Arial";
+  width: 100%;
+  height: 100vh;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

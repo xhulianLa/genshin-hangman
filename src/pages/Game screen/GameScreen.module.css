@@ -1,0 +1,68 @@
+.GameScreen {
+    display: flex;
+    gap: 2.5em;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: url("../../assets/images/liyue.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    /* Ensure the background image covers the entire container */
+    overflow: hidden;
+    /* Hide overflow */
+}
+
+.navbar {
+    display: grid;
+    width: 100%;
+    height: 15%;
+    grid-template-columns: repeat(20, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+/* 1-4  4-8  8-12  12-20*/
+
+.navbar>*:nth-child(1) {
+    grid-column: 1 / 5;
+}
+
+.navbar>*:nth-child(2) {
+    grid-column: 5 / 9;
+}
+
+.navbar>*:nth-child(3) {
+    grid-column: 9 / 13;
+}
+
+.navbar>*:nth-child(4) {
+    grid-column: 13 / 21;
+}
+
+.logo {
+    font-family: "GenshinDrip";
+    /* background: linear-gradient(0deg, #ffffff, #dedede, #7f7f7f);
+    -webkit-background-clip: text;
+    background-clip: text; */
+    color: whitesmoke;
+    font-size: 2vw;
+    text-shadow: rgb(0, 0, 0) 1px 5px 30px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 3vw;
+        display: none;
+    }
+}
+
+.categoryText {
+    font-size: 2vw;
+    color: white;
+    font-weight: bold;
+    font-family: "HywenHei 85W";
+}

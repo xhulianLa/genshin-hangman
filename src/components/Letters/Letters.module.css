@@ -1,0 +1,89 @@
+@keyframes verticalShake {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-5%);
+    }
+
+    50% {
+        transform: translateY(5%);
+    }
+
+    75% {
+        transform: translateY(-4%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.letters {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 40%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2em;
+    font-family: "HywenHei 85W";
+}
+
+.word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 35%;
+    display: flex;
+    gap: 0.5em;
+    /* Adjust the gap between letters in a word */
+}
+
+.letterFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: auto;
+    aspect-ratio: 8/10;
+    font-size: 3.0em;
+    background-color: rgb(26, 26, 79);
+    color: white;
+    border-radius: 30%;
+    border-top: 6px solid rgb(36, 52, 115);
+    border-left: 2px solid rgb(36, 52, 115);
+    border-right: 2px solid rgb(36, 52, 115);
+    animation: verticalShake 0.4s ease;
+    color: rgb(232, 232, 232);
+    font-weight: bold;
+    user-select: none;
+    cursor: pointer;
+}
+
+.letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: auto;
+    text-align: center;
+    aspect-ratio: 10/12;
+    font-size: 3.0em;
+    background-color: rgba(26, 26, 79, 0.805);
+    color: transparent;
+    border-radius: 30%;
+    border-top: 5px solid rgba(52, 73, 127, 0.805);
+    border-left: 2px solid rgba(52, 73, 127, 0.805);
+    border-right: 2px solid rgba(52, 73, 127, 0.805);
+}
+
+@media screen and (max-width: 600px) {
+
+    .letters {
+        gap: 10px;
+    }
+}

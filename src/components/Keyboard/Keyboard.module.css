@@ -1,0 +1,86 @@
+.Keyboard {
+    display: grid;
+    align-items: center;
+    height: 35%;
+    width: 60%;
+    grid-template-columns: repeat(9, 1fr);
+    justify-items: center;
+    gap: 1.5em;
+    font-family: "HywenHei 85W";
+
+}
+
+.letter {
+    border: none;
+    width: 100%;
+    border-radius: 25%;
+    font-size: 2.2rem;
+    aspect-ratio: 10/8;
+    text-align: center;
+    font-family: "HywenHei 85W";
+    color: #024873;
+    user-select: none;
+}
+
+.letter:hover {
+    background-color: #dedede;
+    cursor: pointer;
+}
+
+.letter:active {
+    border: none;
+    background-color: #efefef;
+}
+
+@media screen and (max-width: 768px) {
+    .Keyboard {
+        height: 20%;
+        width: 95%;
+    }
+
+    .letter {
+        font-size: 2em;
+    }
+
+}
+
+/* For screens less than 1200px wide */
+@media screen and (max-width: 1200px) {
+    .Keyboard {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+
+/* For screens less than 900px wide */
+/* @media screen and (max-width: 900px) {
+    .Keyboard {
+        grid-template-columns: repeat(5, 1fr);
+    }
+} */
+
+/* For screens less than 600px wide */
+@media screen and (max-width: 600px) {
+    .Keyboard {
+        height: 20%;
+        width: 95%;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .letter {
+        font-size: 2em;
+    }
+}
+
+/* For screens less than 400px wide */
+@media screen and (max-width: 400px) {
+    .Keyboard {
+        height: 20%;
+        width: 95%;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0.5em;
+    }
+
+    .letter {
+        font-size: 2em;
+    }
+}

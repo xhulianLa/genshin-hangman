@@ -1,0 +1,62 @@
+.healthbar {
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 70%;
+    height: 20%;
+    background-color: #ffffff;
+    border-radius: 3em;
+    position: relative;
+    overflow: visible;
+
+}
+
+.inner_healthbar {
+    width: 80%;
+    height: 50%;
+    transform-origin: left;
+    background-color: #4caf50;
+    border-radius: 3em;
+    transition: width 0.5s ease;
+}
+
+.healthbar_text {
+    font-size: 1em;
+    transform: translate(-50%, -50%);
+    /* Adjust position to center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    color: white;
+
+}
+
+@keyframes shake {
+    0% {
+        background-color: red;
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+        background-color: #b2b29b;
+    }
+}
+
+.shake {
+    animation: shake 0.5s ease;
+}

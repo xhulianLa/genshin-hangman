@@ -1,0 +1,26 @@
+
+{
+    "easy": [
+        "cat", "dog", "fish", "tree", "book", "bird", "star", "milk", "blue", "green",
+        "cake", "lamp", "shoe", "phone", "chair", "apple", "baby", "moon", "sun", "glass",
+        "hat", "coat", "bear", "rain", "snow", "leaf", "car", "pen", "key", "ball",
+        "bed", "fork", "ring", "hand", "foot", "fire", "corn", "rose", "flag", "ship",
+        "card", "bell", "sock", "frog", "nest", "wave", "kite", "wind", "boat", "coin"
+    ],
+    "medium": [
+        "guitar", "garden", "castle", "jungle", "puzzle", "rocket", "turtle", "forest", "desert", "island",
+        "bridge", "helmet", "planet", "shovel", "pebble", "sphinx", "lantern", "shadow", "pillow", "pencil",
+        "camera", "closet", "window", "vessel", "tablet", "spring", "circle", "canvas", "arrow", "wallet",
+        "statue", "cotton", "market", "feather", "quartz", "helmet", "cloudy", "engine", "desire", "mirror",
+        "thunder", "flower", "cannon", "parade", "harvest", "bottle", "medusa", "dagger", "fossil", "neuron"
+    ],
+    "hard": [
+        "knowledge", "dolphin", "hurricane", "orchestra", "elephant", "mushroom", "mountain", "volcano", "universe", "penguin",
+        "constellation", "philosopher", "metamorphosis", "microscope", "synchronize", "hippopotamus", "photography", "algorithm",
+        "circumference", "laboratory", "architecture", "chandelier", "jurisdiction", "infrastructure", "pharmaceutical",
+        "hallucination", "cryptocurrency", "bioluminescent", "conglomerate", "encyclopedia", "magnificent", "transportation",
+        "incredible", "psychology", "hydraulic", "quarantine", "thermometer", "sacrificial", "abbreviation", "ornamentation",
+        "nomenclature", "catastrophe", "heliocentric", "quadrilateral", "ambidextrous", "trapezoid", "photosynthesis", 
+        "carbohydrate", "inflammation", "reminiscence", "unforgettable", "prestidigitation", "internationalization"
+    ]
+}
